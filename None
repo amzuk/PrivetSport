@@ -1,0 +1,28 @@
+.gitignore:# Byte-compiled / optimized / DLL files
+.gitignore:develop-eggs/
+.gitignore:share/python-wheels/
+.gitignore:*.egg-info/
+.gitignore:pip-log.txt
+.gitignore:pip-delete-this-directory.txt
+.gitignore:db.sqlite3-journal
+.gitignore:.webassets-cache
+.gitignore:# .python-version
+.gitignore:#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+.gitignore:#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+.gitignore:#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+.gitignore:#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+.gitignore:#   https://pdm.fming.dev/#use-with-ide
+.gitignore:# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+.gitignore:celerybeat-schedule
+Dockerfile:FROM python:3.8-slim
+Dockerfile:RUN python3 -m pip install pipenv
+Pipfile:[dev-packages]
+Pipfile.lock:        "pipfile-spec": 6,
+Pipfile.lock:        "async-timeout": {
+Pipfile.lock:        "charset-normalizer": {
+Pipfile.lock:        "mypy-extensions": {
+Pipfile.lock:        "typing-extensions": {
+docker-compose.yml:      - db
+docker-compose.yml:      - .env
+runevent/base/init.py:def get_bot_instance() -> typing.Tuple[Bot, Dispatcher]:
+runevent/helpers/keyboard.py:def get_keyboard(is_admin: bool = False) -> ReplyKeyboardMarkup:
